@@ -48,3 +48,7 @@ button {
     outline: 2px solid #f00;
 }
 
+
+.computer-choice {
+    visibility: hidden;
+}
