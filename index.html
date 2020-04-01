@@ -10,23 +10,28 @@
 </head>
 
 <body>
-    <div name = "container">
+    <div class="container">
         <h1>Rock-Paper-Scissors</h1>
         <div class="choices">
             <input name="rps-game" type="radio" value="rock" checked />
+                <label for="rock"><img src="https://i.imgur.com/W5TfSf1.png" alt="Rock" /></label>
             <input name="rps-game" type="radio" value="paper"/>
+                <label for="paper"><img src="https://i.imgur.com/uCYuHSX.png" alt="Paper" /></label>
             <input name="rps-game" type="radio" value="scissors" />
+                <label for="scissors"><img src="https://i.imgur.com/uNa201T.png" alt="Scissors" /></label>
+            <button id="play-rps">Play</button>
         </div>
-        <button id="play-rps">Play</button>
+
         <div class="computer-choice">
-            
+           
         </div>
         <div class="game-state">
             <p>Wins: <span id="wins"></span></p>
             <p>Total Games: <span id="total-games"></span></p>
 
         </div>
-        <div class="game-results">
+        <div class="game-reset">
+            <button id="reset-rps">Reset?</button>
 
         </div>
     </div>
