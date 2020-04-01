@@ -13,7 +13,7 @@ h1 {
     width: 75%;
     border: 2px solid black;
     padding: 20px;
-    background: -webkit-linear-gradient(rgb(245, 183, 90), rgb(231, 175, 123));
+    background: -webkit-linear-gradient(rgb(245, 183, 90, 0.7), rgb(231, 175, 123, 0.7));
     border-radius: 50px 50px 50px 50px;
     box-shadow: 2px 2px 5px 2px;
 } 
@@ -24,6 +24,17 @@ img {
     width: 250px;
 }
 
-input {
-    
+[type=radio] {
+    display: none;
 }
+
+[type=radio] + img:hover {
+    outline: 2px solid #f00;
+    cursor: pointer;
+}
+
+[type=radio]:checked + img:hover {
+    cursor: pointer;
+    outline: 2px solid #f00;
+}
+
