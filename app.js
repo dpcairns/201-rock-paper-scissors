@@ -38,9 +38,9 @@ playButton.addEventListener('click', () => {
     if (gameResult === 'win'){
         userWins++;
     }
-
+    gamesPlayed++;
     numWins.textContent = userWins;
-    totalGames.textContent = gamesPlayed++;
+    totalGames.textContent = gamesPlayed;
 
 
 });

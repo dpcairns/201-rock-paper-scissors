@@ -1,3 +1,7 @@
+* {
+    font-weight: bold;
+    font-size: 15px;
+}
 body {
     background-image: url('https://external-preview.redd.it/dqGdD50QMp3G106qGF0vJ_FAZ6-spBNNm7S5RqTrKag.jpg?auto=webp&s=56dc1d54b818348762a2c4a9de2ce66ae7463e4f');
     
@@ -6,6 +10,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 32px;
 }
 
 .container {
@@ -23,7 +28,9 @@ h1 {
 
 img {
     height: 300px;
+    min-height: 100px;
     width: 196px;
+    min-width: 150px;
 }
 
 button {
@@ -51,4 +58,9 @@ button {
 
 .computer-choice {
     visibility: hidden;
+}
+
+.game-reset {
+    position: relative;
+    top: -13px;
 }
