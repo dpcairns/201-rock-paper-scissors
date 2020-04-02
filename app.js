@@ -8,9 +8,10 @@ const playButton = document.getElementById('play-rps');
 const computerChoice = document.getElementById('rps-computer-choice');
 const numWins = document.getElementById('wins');
 const totalGames = document.getElementById('total-games');
+const resultMessage = document.getElementById('result-message');
 
 //resets game
-//const resetButton = document.getElementById('reset-button');
+const resetButton = document.getElementById('reset-rps');
 
 //initializing
 let userWins = 0;
@@ -19,9 +20,13 @@ let gamesPlayed = 0;
 
 playButton.addEventListener('click', () => {
     const userChoice = document.querySelector('input:checked');
+    computerChoice.style.visibility = 'visible';
+    if (userChoice === null){
+        resultMessage.textContent = 'What, don\'t you know you have to pick one to play?';
+        return;
+    }
     let playerThrow = userChoice.value;
     let computerThrow = getRandomThrow();
-    computerChoice.style.visibility = 'visible';
     if (computerThrow === 'rock') {
         computerChoice.src = 'https://i.imgur.com/W5TfSf1.png';
     } else if (computerThrow === 'paper') {
@@ -29,7 +34,6 @@ playButton.addEventListener('click', () => {
     } else {
         computerChoice.src = 'https://i.imgur.com/uNa201T.png';
     }
-    console.log(computerChoice.src);
     let gameResult = checkResult(playerThrow, computerThrow);
     if (gameResult === 'win'){
         userWins++;
@@ -38,5 +42,13 @@ playButton.addEventListener('click', () => {
     numWins.textContent = userWins;
     totalGames.textContent = gamesPlayed++;
 
+
+});
+
+resetButton.addEventListener('click', () => {
+    userWins = 0;
+    gamesPlayed = 0;
+    numWins.textContent = '0';
+    totalGames.textContent = '0';
 
 });
