@@ -5,13 +5,13 @@ test ('checkResults', (assert) => {
     //Arrange
     const expected1 = 'win';
     const expected2 = 'lose';
-    const expected3 = 'tie';
+    const expected3 = 'draw';
     const expected4 = 'win';
     const expected5 = 'lose';
-    const expected6 = 'tie';
+    const expected6 = 'draw';
     const expected7 = 'win';
     const expected8 = 'lose';
-    const expected9 = 'tie';
+    const expected9 = 'draw';
 
     //Act
     const result1 = checkResults('rock', 'scissors');
