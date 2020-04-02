@@ -40,8 +40,10 @@ playButton.addEventListener('click', () => {
     if (gameResult === 'win'){
         resultMessage.textContent = 'Nice job, you won!';
         userWins++;
+    } else if (gameResult === 'draw') {
+        resultMessage.textContent = 'It\'s a tie, go again!';
     } else {
-        resultMessage.textContent = 'Better luck next time!';
+        resultMessage.textContent = 'Better luck next time!'; 
     }
     gamesPlayed++;
     numWins.textContent = userWins;
