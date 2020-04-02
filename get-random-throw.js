@@ -1,6 +1,4 @@
-export { getRandomThrow };
-
-const getRandomThrow = () => {
+export default function getRandomThrow() {
     let throwValue = Math.floor(Math.random() * 3 + 1);
     switch (throwValue) {
         case 1:

@@ -1,6 +1,4 @@
-export { checkResult };
-
-const checkResult = (playerThrow, computerThrow) => {
+export default function checkResult(playerThrow, computerThrow){
     if (playerThrow === computerThrow) {
         return 'draw';
     }
