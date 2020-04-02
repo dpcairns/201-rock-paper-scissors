@@ -5,6 +5,7 @@ import checkResult from './check-result.js';
 const playButton = document.getElementById('play-rps');
 
 //states that change
+// one small change
 const computerChoice = document.getElementById('rps-computer-choice');
 const numWins = document.getElementById('wins');
 const totalGames = document.getElementById('total-games');
