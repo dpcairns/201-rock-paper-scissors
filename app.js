@@ -10,12 +10,14 @@ const numWins = document.getElementById('wins');
 const totalGames = document.getElementById('total-games');
 const resultMessage = document.getElementById('result-message');
 
-//resets game
+//resets game and counts resets
 const resetButton = document.getElementById('reset-rps');
+const resetCounter = document.getElementById('reset-counter');
 
 //initializing
 let userWins = 0;
 let gamesPlayed = 0;
+let numResets = 0;
 
 
 playButton.addEventListener('click', () => {
@@ -53,5 +55,9 @@ resetButton.addEventListener('click', () => {
     gamesPlayed = 0;
     numWins.textContent = '0';
     totalGames.textContent = '0';
+    numResets++;
+    resetCounter.textContent = numResets;
+
+
 
 });
