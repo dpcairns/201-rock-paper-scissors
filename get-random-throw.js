@@ -12,4 +12,4 @@ export default function getRandomThrow() {
             break;
     }
     return throwValue;
-};
+}

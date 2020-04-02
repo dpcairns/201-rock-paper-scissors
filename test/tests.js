@@ -1,7 +1,7 @@
 import checkResult from '../check-result.js';
 const test = QUnit.test;
 
-test ('checkResult', (assert) => {
+test('checkResult', (assert) => {
     //Arrange
     const expected1 = 'win';
     const expected2 = 'lose';

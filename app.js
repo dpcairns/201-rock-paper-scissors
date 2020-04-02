@@ -10,7 +10,7 @@ const numWins = document.getElementById('wins');
 const totalGames = document.getElementById('total-games');
 
 //resets game
-const resetButton = document.getElementById('reset-button');
+//const resetButton = document.getElementById('reset-button');
 
 //initializing
 let userWins = 0;
