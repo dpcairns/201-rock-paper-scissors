@@ -1,9 +1,7 @@
 export { getRandomThrow };
 
-let throwValue = 0;
-
 const getRandomThrow = () => {
-    throwValue = Math.floor(Math.random() * 3 + 1);
+    let throwValue = Math.floor(Math.random() * 3 + 1);
     switch (throwValue) {
         case 1:
             throwValue = 'rock';

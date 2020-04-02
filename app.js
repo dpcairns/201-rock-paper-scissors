@@ -14,18 +14,24 @@ const totalGames = document.getElementById('total-games');
 const resetButton = document.getElementById('reset-button');
 
 //initializing
-let userWins= 0;
+let userWins = 0;
 let gamesPlayed = 0;
-let computerThrow = '';
 
 console.log(userChoice);
 
 playButton.addEventListener('click', () => {
     const userChoice = document.querySelector('input:checked');
     let playerThrow = userChoice.value;
-    computerThrow = getRandomThrow();
+    let computerThrow = getRandomThrow();
+
     let gameResult = checkResult(playerThrow, computerThrow);
+    if (gameResult === 'win'){
+        userWins++;
+    }
+
     computerChoice.style.visibility = 'visible';
+    numWins.textContent = userWins;
+    totalGames.textContent = gamesPlayed++;
     console.log(gameResult);
 
 
