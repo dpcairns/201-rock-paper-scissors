@@ -36,7 +36,10 @@ playButton.addEventListener('click', () => {
     }
     let gameResult = checkResult(playerThrow, computerThrow);
     if (gameResult === 'win'){
+        resultMessage.textContent = 'Nice job, you won!';
         userWins++;
+    } else {
+        resultMessage.textContent = 'Better luck next time!';
     }
     gamesPlayed++;
     numWins.textContent = userWins;
